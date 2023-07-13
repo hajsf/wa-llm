@@ -31,7 +31,6 @@ client.on('message', async message => {
     messages[message.from].push(message.body);
     if (message.notifyName) {
         client.sendMessage(message.from, `Hello ${message.notifyName}`);
-        // Your code here
     }
     
     if (message.type === "chat") {
